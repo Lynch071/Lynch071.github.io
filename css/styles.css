@@ -90,7 +90,7 @@ header {
   border-radius: 4px;
 }
 .projects .btn:hover {
-  background-color: rgba(47, 48, 97, 80%);
+  background-color: #37fb9cff;
 }
 
 /* ***********************  WORK EXPERIENCE  *********************** */
@@ -119,17 +119,18 @@ footer {
   background-color: #000000ff;
   text-align: center;
 }
-/*span .btn {
-    color:#f4f1deff;
-    background-color: #2F3061;
-    text-decoration: none;
-    padding: 8px;
-    border-radius: 4px;
-    display: inline-block;
+span .btn {
+  color: #020f3bff;
+  background-color: #0088ccff;
+  text-decoration: none;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 4px;
+  display: inline-block;
 }
 span .btn:hover {
-    background-color: rgba(47, 48, 97, 80%);
-}*/
+  background-color: #37fb9cff;
+}
 .contact-list {
   list-style-type: none;
   padding: 0;
@@ -142,8 +143,7 @@ span .btn:hover {
 }
 /* *****************  RESPONSIVE  ***************** */
 @media only screen and (max-width: 480px) {
-  .contact-list li {
-    padding: 15px;
+  .contact-list a {
     display: block;
   }
 } ;
