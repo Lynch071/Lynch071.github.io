@@ -143,7 +143,7 @@ span .btn:hover {
 /* *****************  RESPONSIVE  ***************** */
 @media only screen and (max-width: 480px) {
   .contact-list a {
-    padding: 15px4;
+    padding: 15px;
     display: block;
   }
 } ;
