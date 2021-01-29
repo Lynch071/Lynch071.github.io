@@ -1,0 +1,143 @@
+/* **************************  PALETTE  **************************** */
+/* CSS HEX
+--black: #000000ff;
+--oxford-blue: #020f3bff;
+--green-blue-crayola: #0088ccff;
+--alice-blue: #f0f5faff;
+--medium-spring-green: #37fb9cff;
+*/
+/* ***********************  GLOBAL STYLES  ************************* */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  color: #00a3f5;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+img {
+  width: 300px;
+  float: right;
+  margin: 10px;
+}
+a {
+  color: #37fb9cff;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 90px;
+  line-height: 1;
+}
+h2 {
+  font-size: 45px;
+  padding-bottom: 30px;
+}
+h1,
+h2 {
+  font-family: "Caveat", cursive;
+  font-weight: 500;
+  margin: 0;
+}
+.big {
+  font-size: large;
+}
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+h3 + p {
+  font-style: italic;
+}
+h3 ~ p {
+  margin: 0;
+}
+.divider {
+  border-bottom: 1px dashed#0088ccff;
+  padding: 25px 0;
+}
+
+/* ***********************  ABOUT / PROFILE  *********************** */
+header {
+  background-image: url(../images/banner2.png);
+  color: #f0f5faff;
+  background-size: cover;
+  background-position: top right;
+}
+
+/* ********************  PROJECTS / PORTFOLIO  ********************* */
+.projects {
+  background-image: linear-gradient(#000000ff, #010a27);
+}
+.projects a {
+}
+.projects .btn {
+  color: #f7fff7;
+  background-color: #2f3061;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+}
+.projects .btn:hover {
+  background-color: rgba(47, 48, 97, 80%);
+}
+
+/* ***********************  WORK EXPERIENCE  *********************** */
+.work-experience {
+  background-color: #010a27;
+}
+.job-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+}
+
+/* ******************  EDUCATION & CERTIFICATIONS ****************** */
+.education {
+  background-image: linear-gradient(#010a27, #000000ff);
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 90px;
+}
+.education p {
+  width: 60%;
+}
+
+/* *****************  CONTACT INFO / SOCIAL MEDIA  ***************** */
+footer {
+  background-color: #000000ff;
+  text-align: center;
+}
+/*span .btn {
+    color:#f4f1deff;
+    background-color: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+span .btn:hover {
+    background-color: rgba(47, 48, 97, 80%);
+}*/
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
+/* *****************  RESPONSIVE  ***************** */
