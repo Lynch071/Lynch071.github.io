@@ -141,3 +141,9 @@ span .btn:hover {
   display: inline-block;
 }
 /* *****************  RESPONSIVE  ***************** */
+@media only screen and (max-width: 480px) {
+  .contact-list a {
+    padding: 15px4;
+    display: block;
+  }
+} ;
