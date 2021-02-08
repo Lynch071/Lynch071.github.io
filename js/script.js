@@ -19,8 +19,8 @@ let features = ["HTML", "CSS", "JavaScript", "React", "PHP"];
 let svg = d3
   .select(".radar")
   .append("svg")
-  .attr("width", 600)
-  .attr("height", 600);
+  .attr("width", 400)
+  .attr("height", 400);
 
 // plotting the gridlines
 
@@ -30,19 +30,20 @@ let ticks = [2, 4, 6, 8, 10];
 ticks.forEach((t) =>
   svg
     .append("circle")
-    .attr("cx", 300)
-    .attr("cy", 300)
+    .attr("cx", 200)
+    .attr("cy", 200)
     .attr("fill", "none")
-    .attr("stroke", "gray")
+    .attr("stroke", "#0088ccff")
     .attr("r", radialScale(t))
 );
 
 ticks.forEach((t) =>
   svg
     .append("text")
-    .attr("x", 305)
-    .attr("y", 300 - radialScale(t))
+    .attr("x", 202.5)
+    .attr("y", 200 - radialScale(t))
     .text(t.toString())
+    .attr("fill", "#0088ccff")
 );
 
 // plotting the axes
@@ -50,29 +51,30 @@ ticks.forEach((t) =>
 function angleToCoordinate(angle, value) {
   let x = Math.cos(angle) * radialScale(value);
   let y = Math.sin(angle) * radialScale(value);
-  return { x: 300 + x, y: 300 - y };
+  return { x: 200 + x, y: 200 - y };
 }
 
 for (let i = 0; i < features.length; i++) {
   let ft_name = features[i];
   let angle = Math.PI / 2 + (2 * Math.PI * i) / features.length;
   let line_coordinate = angleToCoordinate(angle, 10);
-  let label_coordinate = angleToCoordinate(angle, 13);
+  let label_coordinate = angleToCoordinate(angle, 11.5);
 
   //draw axis line
   svg
     .append("line")
-    .attr("x1", 300)
-    .attr("y1", 300)
+    .attr("x1", 200)
+    .attr("y1", 200)
     .attr("x2", line_coordinate.x)
     .attr("y2", line_coordinate.y)
-    .attr("stroke", "black");
+    .attr("stroke", "#0088ccff");
 
   //draw axis label
   svg
     .append("text")
     .attr("x", label_coordinate.x)
     .attr("y", label_coordinate.y)
+    .attr("fill", "#f0f5faff")
     .text(ft_name);
 }
 
