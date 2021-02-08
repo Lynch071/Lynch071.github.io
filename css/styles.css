@@ -67,8 +67,12 @@ h3 ~ p {
   border-bottom: 1px dashed#0088ccff;
   padding: 25px 0;
 }
+.navbar {
+  text-decoration: none;
+  display: inline-block;
+}
 
-/* ***********************  ABOUT / PROFILE  *********************** */
+/* ****************************  ABOUT  **************************** */
 header {
   background-image: url(../images/banner2.png);
   color: #f0f5faff;
@@ -76,9 +80,20 @@ header {
   background-position: top right;
 }
 
+/* *************************** PROFILER **************************** */
+.profiler {
+  background-image: linear-gradient(#000000ff, #010a27);
+}
+.radar {
+  padding-top: 50px;
+}
+.radar text {
+  font-family: "Montserrat", sans-serif;
+}
+
 /* ********************  PROJECTS / PORTFOLIO  ********************* */
 .projects {
-  background-image: linear-gradient(#000000ff, #010a27);
+  background-color: #010a27;
 }
 .projects a {
 }
