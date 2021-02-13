@@ -117,6 +117,7 @@ header {
 /* ********************  PROJECTS / PORTFOLIO  ********************* */
 .projects {
   background-color: #010a27;
+  padding-top: 30px;
 }
 .projects a {
 }
