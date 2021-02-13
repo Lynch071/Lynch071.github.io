@@ -135,6 +135,7 @@ header {
 /* ***********************  WORK EXPERIENCE  *********************** */
 .work-experience {
   background-color: #010a27;
+  padding-top: 30px;
 }
 .job-item {
   display: grid;
@@ -145,8 +146,6 @@ header {
 /* ******************  EDUCATION & CERTIFICATIONS ****************** */
 .education {
   background-image: linear-gradient(#010a27, #000000ff);
-  background-size: cover;
-  background-position: top right;
   padding-bottom: 90px;
 }
 .education p {
@@ -180,9 +179,3 @@ span .btn:hover {
   padding: 15px;
   display: inline-block;
 }
-/* *****************  RESPONSIVE  ***************** */
-@media only screen and (max-width: 480px) {
-  .contact-list a {
-    display: block;
-  }
-} ;
